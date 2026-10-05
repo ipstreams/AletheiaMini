@@ -1,0 +1,34 @@
+{
+  "project": "Aletheia Tiny",
+  "device": "cpu",
+  "model_config": {
+    "vocab_size": 256,
+    "context_length": 128,
+    "n_layers": 4,
+    "n_heads": 4,
+    "d_model": 128,
+    "d_ff": 512,
+    "dropout": 0.0
+  },
+  "train_settings": {
+    "seed": 42,
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.1,
+    "max_grad_norm": 1.0,
+    "steps": 100,
+    "eval_interval": 20,
+    "eval_batches": 4,
+    "checkpoint_interval": 50,
+    "validation_fraction": 0.1
+  },
+  "corpus_metadata": {
+    "source_path": "/home/ubuntu/aletheia/data/raw/aletheia_seed.txt",
+    "sha256": "8266252d6eaa298081ce8988b55add8c641bc9e74d0606b310f99adf0c68c9f7",
+    "total_bytes": 8652,
+    "train_bytes": 7786,
+    "validation_bytes": 866,
+    "validation_fraction": 0.1
+  },
+  "parameter_count": 837888
+}

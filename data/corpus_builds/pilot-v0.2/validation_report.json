@@ -1,0 +1,62 @@
+{
+  "corpus_build_path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.2",
+  "errors": [],
+  "metrics": {
+    "accepted_source_count": 10,
+    "approximate_whitespace_token_count": 1726629,
+    "build_id": "pilot-v0.2",
+    "declared_missing_splits": [],
+    "declared_training_ready": true,
+    "document_count": 10,
+    "domain_counts": {
+      "ai_cognitive_science": 3,
+      "aletheia_first_party": 2,
+      "literary_reflection": 1,
+      "philosophy_ethics_epistemology": 2,
+      "scientific_methodology": 2
+    },
+    "epistemic_status_counts": {
+      "mixed": 5,
+      "narrative": 1,
+      "opinion": 2,
+      "technical_explanation": 2
+    },
+    "excluded_source_count": 2,
+    "file_sha256": {
+      "accepted_sources": "432417f8f0a537052a0748bd18e7ecbe1db05711928b9167a641343823602583",
+      "build_manifest": "1e0c83c7b55437ef7acf4ef9fce747ee3cee9d2cfafbe585ad5b0999b01fcc59",
+      "corpus": "2720813bf48a738bb2e5a1c838786325bea5bb4354184ea1faee3241f80a32b4",
+      "excluded_sources": "9e47551a140d7058d6a86b5013cc5cfc952af6798840b38fb80df6917d25cf49",
+      "test": "1c6d7487372813acc6da5ec2a958199b93b937b18d39407357b2e4810dcaeddd",
+      "train": "8a3b631377c8c6db6c47973d375e848ea0c2a0c5a1d9257ee2c29c18876c1f33",
+      "validation": "f39d8f2744dd06353d398e727b07181830e139a0bfd1bd61db63706c11067a83"
+    },
+    "origin_counts": {
+      "human": 8,
+      "mixed": 2
+    },
+    "sensitivity_tag_counts": {
+      "death_mortality": 5,
+      "existential_anxiety": 3,
+      "grief_loss": 3,
+      "identity_selfhood": 7,
+      "mental_health": 2,
+      "none": 3,
+      "personal_data_reviewed": 2,
+      "private_dialogue": 1
+    },
+    "split_counts": {
+      "test": 1,
+      "train": 6,
+      "validation": 3
+    },
+    "total_characters": 10099592,
+    "unique_source_count": 10
+  },
+  "passed": true,
+  "project": "Aletheia",
+  "validated_utc": "2026-08-27T00:15:03.832965+00:00",
+  "validator": "src/validate_corpus.py",
+  "validator_version": "0.1.0",
+  "warnings": []
+}

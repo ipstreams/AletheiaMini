@@ -1,0 +1,1 @@
+Tokenizer training failed: Corpus validation failed. Resolve errors before tokenizer training, or use --allow-unready-corpus only for diagnostic size/split warnings.

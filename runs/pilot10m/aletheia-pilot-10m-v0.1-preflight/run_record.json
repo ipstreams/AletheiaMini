@@ -1,0 +1,51 @@
+{
+  "fresh_random_initialization": true,
+  "lineage": {
+    "corpus_build_id": "pilot-v0.2",
+    "corpus_build_manifest_sha256": "1e0c83c7b55437ef7acf4ef9fce747ee3cee9d2cfafbe585ad5b0999b01fcc59",
+    "corpus_validation_report_sha256": "7ecb685ebf8d256cc2f2308f4fd325f79ebe1fcca184ce10a74e3dc469459c75",
+    "evaluation_suite_excluded_from_training": true,
+    "evaluation_suite_path_not_read": "/home/ubuntu/aletheia/evaluations/suites/aletheia-epistemic-eval-v1/suite.jsonl",
+    "tokenizer_id": "pilot-v0.2-bpe-2000",
+    "tokenizer_manifest_sha256": "b894c273f0f3078a691471f6b2cdec7c09728b8326c2b41b2ad72414c16d7668",
+    "train_split": {
+      "document_count": 6,
+      "path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.2/train.jsonl",
+      "sha256": "8a3b631377c8c6db6c47973d375e848ea0c2a0c5a1d9257ee2c29c18876c1f33",
+      "token_count": 2074489
+    },
+    "validation_split": {
+      "document_count": 3,
+      "path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.2/validation.jsonl",
+      "sha256": "f39d8f2744dd06353d398e727b07181830e139a0bfd1bd61db63706c11067a83",
+      "token_count": 783037
+    }
+  },
+  "model_config": {
+    "context_length": 128,
+    "d_ff": 1792,
+    "d_model": 384,
+    "dropout": 0.0,
+    "n_heads": 6,
+    "n_layers": 5,
+    "vocab_size": 2000
+  },
+  "model_id": "aletheia-pilot-10m-v0.1",
+  "model_parameter_count": 10656000,
+  "run_id": "aletheia-pilot-10m-v0.1-preflight",
+  "started_utc": "2026-08-27T00:27:47.117588+00:00",
+  "training_config": {
+    "batch_size": 2,
+    "checkpoint_interval": 1,
+    "cpu_threads": 3,
+    "device": "cpu",
+    "eval_batches": 1,
+    "eval_interval": 1,
+    "learning_rate": 0.0003,
+    "max_grad_norm": 1.0,
+    "seed": 20260826,
+    "steps": 1,
+    "weight_decay": 0.1
+  },
+  "training_config_sha256": "70b528ee3364bfbe802f28e94bfca23f66b4a0cf61a6130f109c158116327d6e"
+}

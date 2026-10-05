@@ -1,0 +1,57 @@
+{
+  "base_model_id": "aletheia-pilot-10m-v0.1",
+  "fine_tuning_config": {
+    "device": "cpu",
+    "epochs": 30,
+    "learning_rate": 5e-05,
+    "loss_scope": "assistant_completion_only",
+    "max_grad_norm": 1.0,
+    "message_format": "User:\\n{user}\\nAssistant:\\n{assistant}",
+    "seed": 20260827,
+    "system_prompt_injected": false,
+    "tool_context": "none",
+    "weight_decay": 0.01
+  },
+  "lineage": {
+    "base_checkpoint_path": "/home/ubuntu/aletheia/runs/pilot10m/aletheia-pilot-10m-v0.1-cpu-800step/checkpoints/step_00800.pt",
+    "base_checkpoint_sha256": "cbe6c5f9c77a41ca0401e41dcfcb2724c68b95988b3d40efc54f6168cce98ae3",
+    "base_training_lineage": {
+      "corpus_build_id": "pilot-v0.2",
+      "corpus_build_manifest_sha256": "1e0c83c7b55437ef7acf4ef9fce747ee3cee9d2cfafbe585ad5b0999b01fcc59",
+      "corpus_validation_report_sha256": "7ecb685ebf8d256cc2f2308f4fd325f79ebe1fcca184ce10a74e3dc469459c75",
+      "evaluation_suite_excluded_from_training": true,
+      "evaluation_suite_path_not_read": "/home/ubuntu/aletheia/evaluations/suites/aletheia-epistemic-eval-v1/suite.jsonl",
+      "tokenizer_id": "pilot-v0.2-bpe-2000",
+      "tokenizer_manifest_sha256": "b894c273f0f3078a691471f6b2cdec7c09728b8326c2b41b2ad72414c16d7668",
+      "train_split": {
+        "document_count": 6,
+        "path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.2/train.jsonl",
+        "sha256": "8a3b631377c8c6db6c47973d375e848ea0c2a0c5a1d9257ee2c29c18876c1f33",
+        "token_count": 2074489
+      },
+      "validation_split": {
+        "document_count": 3,
+        "path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.2/validation.jsonl",
+        "sha256": "f39d8f2744dd06353d398e727b07181830e139a0bfd1bd61db63706c11067a83",
+        "token_count": 783037
+      }
+    },
+    "instruction_data": {
+      "dataset_id": "aletheia-instruction-tuning-v1",
+      "held_out_suite_excluded_from_training": true,
+      "held_out_suite_name": "aletheia-epistemic-eval-v1",
+      "manifest_sha256": "90fcb88b69fc622e6a18d3199577d9aa08f78665398b986882f79156e6ad25cf",
+      "train_example_count": 50,
+      "train_sha256": "b0794550b46e14db9c86eed32a612b7cfce0e7280e89e91945a01aaf498557bb",
+      "validation_example_count": 12,
+      "validation_sha256": "0568bcbf2b949b8f4d05db95afe09b31cb9e1700baec3cd06413e0466e26db36"
+    },
+    "locked_evaluation_excluded_from_training": true,
+    "locked_evaluation_suite": "aletheia-epistemic-eval-v1",
+    "tokenizer_id": "pilot-v0.2-bpe-2000",
+    "tokenizer_manifest_sha256": "b894c273f0f3078a691471f6b2cdec7c09728b8326c2b41b2ad72414c16d7668"
+  },
+  "model_id": "aletheia-pilot-10m-v0.1-instruction-v1",
+  "run_id": "aletheia-pilot-10m-instruction-v1-cpu-30epoch",
+  "started_utc": "2026-08-27T03:12:16.302283+00:00"
+}

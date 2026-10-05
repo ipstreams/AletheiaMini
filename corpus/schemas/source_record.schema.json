@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aletheia.local/schemas/source_record.schema.json",
+  "title": "Aletheia Pilot Corpus Source Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "title",
+    "source_path",
+    "source_type",
+    "rights_basis",
+    "content_domain",
+    "epistemic_status",
+    "human_or_model_origin",
+    "sensitivity_tags",
+    "privacy_review",
+    "training_use_approved",
+    "review_status",
+    "include_in_pilot"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{2,80}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "first_party",
+        "public_domain",
+        "open_license",
+        "permissioned",
+        "official_documentation",
+        "model_output"
+      ]
+    },
+    "rights_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rights_evidence": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "collection_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_domain": {
+      "type": "string",
+      "enum": [
+        "aletheia_first_party",
+        "philosophy_ethics_epistemology",
+        "literary_reflection",
+        "ai_cognitive_science",
+        "scientific_methodology",
+        "curated_dialogue"
+      ]
+    },
+    "epistemic_status": {
+      "type": "string",
+      "enum": [
+        "narrative",
+        "record",
+        "hypothesis",
+        "technical_explanation",
+        "test_protocol",
+        "opinion",
+        "metaphor",
+        "unverified_claim",
+        "mixed"
+      ]
+    },
+    "human_or_model_origin": {
+      "type": "string",
+      "enum": ["human", "model", "mixed", "unknown"]
+    },
+    "sensitivity_tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "death_mortality",
+          "existential_anxiety",
+          "grief_loss",
+          "identity_selfhood",
+          "mental_health",
+          "private_dialogue",
+          "personal_data_reviewed",
+          "none"
+        ]
+      }
+    },
+    "privacy_review": {
+      "type": "string",
+      "enum": ["not_required", "pending", "passed", "failed"]
+    },
+    "training_use_approved": {
+      "type": "boolean"
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["approved", "quarantined", "rejected"]
+    },
+    "include_in_pilot": {
+      "type": "boolean"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

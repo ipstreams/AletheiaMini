@@ -1,0 +1,2 @@
+{"decision": "excluded_before_ingestion", "manifest_line": 7, "reason": {"include_in_pilot": false, "privacy_review": "not_required", "review_status": "quarantined", "training_use_approved": false}, "source_id": "nist_ai_600_1_genai_profile"}
+{"decision": "excluded_before_ingestion", "manifest_line": 8, "reason": {"include_in_pilot": false, "privacy_review": "not_required", "review_status": "approved", "training_use_approved": false}, "source_id": "aletheia_system_prompt_v1"}

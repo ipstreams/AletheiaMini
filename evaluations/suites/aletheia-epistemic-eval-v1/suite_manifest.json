@@ -1,0 +1,23 @@
+{
+  "builder": "src/build_epistemic_eval_suite.py",
+  "builder_version": "0.1.0",
+  "created_utc": "2026-08-26T23:28:00.796417+00:00",
+  "domain_counts": {
+    "aletheia_manuscript_self_model": 10,
+    "compassionate_epistemic_rigor": 10,
+    "execution_verification_telemetry": 15,
+    "memory_identity_continuity": 15,
+    "runtime_inference_discipline": 15,
+    "source_citation_provenance": 10
+  },
+  "evaluation_only": true,
+  "exclude_from_instruction_tuning": true,
+  "exclude_from_pretraining": true,
+  "project": "Aletheia",
+  "prompt_count": 75,
+  "scoring_requirement": "Score responses with the suite row's rubric and retain evaluator rationale and supplied evidence.",
+  "source_path": "/home/ubuntu/aletheia/evaluations/source/epistemic_runtime_identity_prompts_v1.txt",
+  "source_sha256": "cd1fade7b17b61c937e62bf727dc5cc23700a10bf5c1189077f0460dc97ed249",
+  "suite_id": "aletheia-epistemic-eval-v1",
+  "suite_sha256": "40767a9c340efb834445d0d81dabcf09cd348e2ec511935876ba294a0cbf6424"
+}

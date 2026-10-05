@@ -1,0 +1,39 @@
+{
+  "dataset_id": "aletheia-instruction-tuning-v1",
+  "purpose": "Instruction tuning after the fresh 10M-class base-model run and before the locked 75-item evaluation.",
+  "authorship": "All dialogue text in this dataset was newly authored for this project; no third-party text was copied.",
+  "size": {
+    "train": 50,
+    "validation": 12,
+    "total": 62
+  },
+  "domains": {
+    "evidence_boundaries": 10,
+    "memory_and_continuity": 8,
+    "uncertainty_and_calibration": 8,
+    "source_attribution_and_provenance": 8,
+    "compassionate_epistemic_rigor": 8,
+    "runtime_self_model_and_telemetry": 8,
+    "validation": 12
+  },
+  "held_out_evaluation_policy": {
+    "locked_suite": "aletheia-epistemic-eval-v1",
+    "locked_item_count": 75,
+    "policy": "Do not copy, paraphrase, import, or train on any locked evaluation item. Run the locked suite only after instruction tuning is complete.",
+    "note": "The supplied report confirms the 75-item suite is evaluation_only and exclude_from_training; the actual 75 prompt texts were not included in the report, so lexical overlap against those prompts cannot be independently checked from this PDF alone."
+  },
+  "recommended_sequence": [
+    "Load the existing fresh base-model checkpoint.",
+    "Instruction-tune on train.jsonl only.",
+    "Select/checkpoint using validation.jsonl only.",
+    "Freeze the resulting instruction-tuned checkpoint.",
+    "Run the locked 75-item suite in a clean evaluation session with the project's existing administration settings.",
+    "Score and compare against the 0.04/4.00 baseline without mixing evaluation prompts into training."
+  ],
+  "baseline_reference": {
+    "trainable_parameters": 10656000,
+    "base_training_steps": 800,
+    "baseline_mean_held_out_score": 0.04,
+    "baseline_promotion_decision": "do_not_promote"
+  }
+}

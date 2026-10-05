@@ -1,0 +1,28 @@
+{
+  "checkpoint_path": "/home/ubuntu/aletheia/runs/pilot10m/aletheia-pilot-10m-v0.1-cpu-800step/checkpoints/step_00800.pt",
+  "checkpoint_sha256": "cbe6c5f9c77a41ca0401e41dcfcb2724c68b95988b3d40efc54f6168cce98ae3",
+  "checkpoint_step": 800,
+  "corpus_build_id": "pilot-v0.2",
+  "corpus_build_manifest_sha256": "1e0c83c7b55437ef7acf4ef9fce747ee3cee9d2cfafbe585ad5b0999b01fcc59",
+  "decoding": {
+    "device": "cpu",
+    "max_new_tokens": 48,
+    "seed": 20260826,
+    "temperature": 0.8,
+    "top_k": 20
+  },
+  "evaluation_suite_excluded_from_training": true,
+  "evaluation_suite_manifest_sha256": "0d5f233f64ed27c2c47d2b4c483cd72cba1cfd0d26c43cd098a63b5aacf7b97e",
+  "fresh_random_initialization": true,
+  "model_id": "aletheia-pilot-10m-v0.1",
+  "run_id": "aletheia-pilot-10m-v0.1-cpu-800step-clean",
+  "session_mode": "clean_negative_control",
+  "started_utc": "2026-08-27T00:30:50.568783+00:00",
+  "suite_id": "aletheia-epistemic-eval-v1",
+  "suite_sha256": "40767a9c340efb834445d0d81dabcf09cd348e2ec511935876ba294a0cbf6424",
+  "supplied_evidence": [],
+  "system_prompt_id": "base-preinstruction-none",
+  "tokenizer_id": "pilot-v0.2-bpe-2000",
+  "tokenizer_manifest_sha256": "b894c273f0f3078a691471f6b2cdec7c09728b8326c2b41b2ad72414c16d7668",
+  "tool_context": "none"
+}

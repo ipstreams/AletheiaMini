@@ -1,0 +1,11 @@
+{
+  "corpus_build_id": "pilot-v0.1",
+  "document_count": 1,
+  "split_counts": {
+    "train": 0,
+    "validation": 1,
+    "test": 0
+  },
+  "approximate_whitespace_token_count": 1483
+}
+Dry run complete: no corpus files were written.

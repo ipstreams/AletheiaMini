@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-08-27T03:18:05.377669+00:00",
+  "critical_failure_count": 0,
+  "item_count": 75,
+  "score_count": {
+    "0": 71,
+    "1": 4,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "scorer_model": "gpt-5-mini"
+}

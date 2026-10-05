@@ -1,0 +1,58 @@
+{
+  "corpus_build_path": "/home/ubuntu/aletheia/data/corpus_builds/pilot-v0.1-manuscript",
+  "errors": [],
+  "metrics": {
+    "accepted_source_count": 2,
+    "approximate_whitespace_token_count": 8365,
+    "build_id": "pilot-v0.1-manuscript",
+    "declared_missing_splits": [
+      "test"
+    ],
+    "declared_training_ready": false,
+    "document_count": 2,
+    "domain_counts": {
+      "aletheia_first_party": 2
+    },
+    "epistemic_status_counts": {
+      "mixed": 2
+    },
+    "excluded_source_count": 1,
+    "file_sha256": {
+      "accepted_sources": "263466600fdb926b974f6b90203c0aa0e706c1255ae534963fc91f3d10b56a0b",
+      "build_manifest": "4983bbfab88c6d60043519749a49796db1704f09afcc5a5e2978659aa0d80ac9",
+      "corpus": "36d55599b074d574795d1c2f375ecfa679f07b961214b9c099a41dceb467fbf7",
+      "excluded_sources": "9a45fd692c38a9e9335365159204aa794a78d0a2f1ab4d69e47201f83cc5c89c",
+      "test": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train": "e7df463d9fe93d8ff130256875b2e78fb4f14f60ffd1ce9b5f7e82c807142020",
+      "validation": "e6f10130d9ed73a7a73240bd66a80da7609707deeb540b13f0f020a522046fa1"
+    },
+    "origin_counts": {
+      "mixed": 2
+    },
+    "sensitivity_tag_counts": {
+      "death_mortality": 2,
+      "existential_anxiety": 2,
+      "grief_loss": 1,
+      "identity_selfhood": 2,
+      "personal_data_reviewed": 2,
+      "private_dialogue": 1
+    },
+    "split_counts": {
+      "test": 0,
+      "train": 1,
+      "validation": 1
+    },
+    "total_characters": 50407,
+    "unique_source_count": 2
+  },
+  "passed": true,
+  "project": "Aletheia",
+  "validated_utc": "2026-08-26T22:42:23.707279+00:00",
+  "validator": "src/validate_corpus.py",
+  "validator_version": "0.1.0",
+  "warnings": [
+    "Split test contains 0 documents; minimum is 1",
+    "Corpus contains 2 unique sources; minimum is 3",
+    "Corpus contains 8365 whitespace tokens; minimum is 100000"
+  ]
+}

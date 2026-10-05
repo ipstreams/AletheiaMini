@@ -1,0 +1,60 @@
+{
+  "actual_vocab_size": 300,
+  "allow_unready_corpus": true,
+  "corpus_build_id": "pilot-v0.1-manuscript",
+  "corpus_build_manifest_sha256": "4983bbfab88c6d60043519749a49796db1704f09afcc5a5e2978659aa0d80ac9",
+  "corpus_validation_error_count": 0,
+  "corpus_validation_passed": true,
+  "corpus_validation_warning_count": 3,
+  "min_frequency": 1,
+  "partition_tokenization_statistics": {
+    "test": {
+      "character_count": 0,
+      "document_count": 0,
+      "tokenizer_token_count": 0,
+      "tokens_per_character": 0.0,
+      "tokens_per_whitespace_token": 0.0,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 0
+    },
+    "train": {
+      "character_count": 41781,
+      "document_count": 1,
+      "tokenizer_token_count": 29443,
+      "tokens_per_character": 0.70469831,
+      "tokens_per_whitespace_token": 4.27826213,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 6882
+    },
+    "validation": {
+      "character_count": 8626,
+      "document_count": 1,
+      "tokenizer_token_count": 6052,
+      "tokens_per_character": 0.70159981,
+      "tokens_per_whitespace_token": 4.08091706,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 1483
+    }
+  },
+  "project": "Aletheia",
+  "requested_vocab_size": 300,
+  "script": "src/train_corpus_tokenizer.py",
+  "script_version": "0.1.0",
+  "special_tokens": [
+    "<pad>",
+    "<unk>",
+    "<bos>",
+    "<eos>",
+    "<doc>"
+  ],
+  "test_jsonl_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tokenizer_id": "pilot-v0.1-manuscript-bpe-300-diagnostic",
+  "tokenizer_type": "Byte-Level BPE",
+  "train_jsonl_sha256": "e7df463d9fe93d8ff130256875b2e78fb4f14f60ffd1ce9b5f7e82c807142020",
+  "trained_on_split": "train",
+  "trained_utc": "2026-08-26T22:42:23.783621+00:00",
+  "validation_jsonl_sha256": "e6f10130d9ed73a7a73240bd66a80da7609707deeb540b13f0f020a522046fa1"
+}

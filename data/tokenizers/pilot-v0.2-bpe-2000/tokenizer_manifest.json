@@ -1,0 +1,60 @@
+{
+  "actual_vocab_size": 2000,
+  "allow_unready_corpus": false,
+  "corpus_build_id": "pilot-v0.2",
+  "corpus_build_manifest_sha256": "1e0c83c7b55437ef7acf4ef9fce747ee3cee9d2cfafbe585ad5b0999b01fcc59",
+  "corpus_validation_error_count": 0,
+  "corpus_validation_passed": true,
+  "corpus_validation_warning_count": 0,
+  "min_frequency": 2,
+  "partition_tokenization_statistics": {
+    "test": {
+      "character_count": 1105632,
+      "document_count": 1,
+      "tokenizer_token_count": 373975,
+      "tokens_per_character": 0.33824546,
+      "tokens_per_whitespace_token": 1.97414958,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 189436
+    },
+    "train": {
+      "character_count": 6471091,
+      "document_count": 6,
+      "tokenizer_token_count": 2074471,
+      "tokens_per_character": 0.32057515,
+      "tokens_per_whitespace_token": 1.87687204,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 1105281
+    },
+    "validation": {
+      "character_count": 2522869,
+      "document_count": 3,
+      "tokenizer_token_count": 783028,
+      "tokens_per_character": 0.31037204,
+      "tokens_per_whitespace_token": 1.81293412,
+      "unknown_token_count": 0,
+      "unknown_token_rate": 0.0,
+      "whitespace_token_count": 431912
+    }
+  },
+  "project": "Aletheia",
+  "requested_vocab_size": 2000,
+  "script": "src/train_corpus_tokenizer.py",
+  "script_version": "0.1.0",
+  "special_tokens": [
+    "<pad>",
+    "<unk>",
+    "<bos>",
+    "<eos>",
+    "<doc>"
+  ],
+  "test_jsonl_sha256": "1c6d7487372813acc6da5ec2a958199b93b937b18d39407357b2e4810dcaeddd",
+  "tokenizer_id": "pilot-v0.2-bpe-2000",
+  "tokenizer_type": "Byte-Level BPE",
+  "train_jsonl_sha256": "8a3b631377c8c6db6c47973d375e848ea0c2a0c5a1d9257ee2c29c18876c1f33",
+  "trained_on_split": "train",
+  "trained_utc": "2026-08-27T00:15:32.254138+00:00",
+  "validation_jsonl_sha256": "f39d8f2744dd06353d398e727b07181830e139a0bfd1bd61db63706c11067a83"
+}

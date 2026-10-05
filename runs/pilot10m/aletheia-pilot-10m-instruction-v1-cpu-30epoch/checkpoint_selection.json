@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-08-27T03:14:37.359502+00:00",
+  "elapsed_seconds": 136.358,
+  "final_epoch": 30,
+  "final_step": 1500,
+  "selected_checkpoint": "checkpoints/best_validation.pt",
+  "selected_epoch": 9,
+  "selected_validation_loss": 4.533135970433553,
+  "selection_metric": "mean assistant-completion cross-entropy on instruction validation.jsonl"
+}

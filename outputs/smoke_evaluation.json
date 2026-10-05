@@ -1,0 +1,10 @@
+{
+  "project": "Aletheia Tiny",
+  "checkpoint": "/home/ubuntu/aletheia/checkpoints/resume_smoke_step_10.pt",
+  "checkpoint_step": 10,
+  "corpus_sha256": "8266252d6eaa298081ce8988b55add8c641bc9e74d0606b310f99adf0c68c9f7",
+  "train_loss": 4.60126805305481,
+  "validation_loss": 4.573741674423218,
+  "evaluation_batches": 2,
+  "device": "cpu"
+}
